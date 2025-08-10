@@ -1,0 +1,33 @@
+:root {
+    overflow-y: scroll;
+    color-scheme: light dark;
+    --animation-timing: 250ms;
+    --bold: 600;
+    --border-radius: 1.25rem;
+    --trim: trim-both cap alphabetic;
+
+    /* light mode (default) */
+    --body-bg: #fff;
+    --body-fg: #000;
+    --el-bg: #fff;
+    --accent-colour: blue;
+    --accent-neutral: #e4e4e4;
+    --image-invert: 0; /* filter: invert(var(--image-invert)); */
+    --shadow-top: 0 -4px 6px rgba(0, 0, 0, 0.2);
+    --shadow-bottom: 0 4px 6px rgba(0, 0, 0, 0.2);
+    --like: -46px;
+    --dislike: -69px;
+}
+
+.darkmode {
+    --body-bg: #333;
+    --body-fg: #fff;
+    --el-bg: #000;
+    --accent-colour: aqua;
+    --accent-neutral: #4d4c4c;
+    --image-invert: 1; /* filter: invert(var(--image-invert)); */
+    --shadow-top: 0 -4px 6px rgba(0, 0, 0, 0.7);
+    --shadow-bottom: 0 4px 6px rgba(0, 0, 0, 0.7);
+    --like: 0;
+    --dislike: -23px;
+}
