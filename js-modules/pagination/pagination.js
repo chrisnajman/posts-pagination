@@ -1,4 +1,4 @@
-const POSTS = "/json/posts.json"
+const POSTS = "./json/posts.json"
 
 import posts from "./components/posts.js"
 
