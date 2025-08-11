@@ -82,62 +82,6 @@ export default function paginator(allPosts, pageSize) {
     }
   })
 
-  // function renderPageButtons() {
-  //   // Clear existing page buttons but keep previous and next buttons
-  //   // Remove all except previousBtn and nextBtn
-  //   ;[...paginator.querySelectorAll(".page-number, .ellipsis")].forEach((el) =>
-  //     el.remove()
-  //   )
-
-  //   // Insert previous button first if not already
-  //   if (!paginator.contains(previousBtn))
-  //     paginator.insertBefore(previousBtn, paginator.firstChild)
-  //   // Insert next button last if not already
-  //   if (!paginator.contains(nextBtn)) paginator.appendChild(nextBtn)
-
-  //   if (totalPages <= maxVisibleButtons) {
-  //     // Show all buttons
-  //     for (let i = 1; i <= totalPages; i++) {
-  //       paginator.insertBefore(createPageButton(i), nextBtn)
-  //     }
-  //   } else {
-  //     // Complex case: show window around currentPage, with ellipsis if needed
-
-  //     // Always show first page button
-  //     paginator.insertBefore(createPageButton(1), nextBtn)
-
-  //     let startPage = Math.max(2, currentPage - 1)
-  //     let endPage = Math.min(totalPages - 1, currentPage + 1)
-
-  //     // Adjust window if at beginning or end
-  //     if (currentPage <= 2) {
-  //       startPage = 2
-  //       endPage = 3
-  //     }
-  //     if (currentPage >= totalPages - 1) {
-  //       startPage = totalPages - 2
-  //       endPage = totalPages - 1
-  //     }
-
-  //     // Show ellipsis after first page if gap
-  //     if (startPage > 2) {
-  //       paginator.insertBefore(createEllipsis(), nextBtn)
-  //     }
-
-  //     // Show middle page buttons
-  //     for (let i = startPage; i <= endPage; i++) {
-  //       paginator.insertBefore(createPageButton(i), nextBtn)
-  //     }
-
-  //     // Show ellipsis before last page if gap
-  //     if (endPage < totalPages - 1) {
-  //       paginator.insertBefore(createEllipsis(), nextBtn)
-  //     }
-
-  //     // Always show last page button
-  //     paginator.insertBefore(createPageButton(totalPages), nextBtn)
-  //   }
-  // }
   function renderPageButtons() {
     // Clear existing page buttons container if any
     const existingList = paginator.querySelector(".page-numbers-container")

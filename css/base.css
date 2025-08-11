@@ -30,15 +30,15 @@ body {
     font-size: clamp(1.75rem, 1.4486rem + 1.4019vw, 2.5rem);
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.75rem;
     margin-inline: auto;
     align-items: center;
     justify-content: center;
 
-    & svg {
-        width: 2.5rem;
-        height: 2.5rem;
-        fill: var(--body-fg);
+    & img {
+        width: clamp(2.5rem, 2.2488rem + 1.1682vw, 3.125rem);
+        aspect-ratio: 1;
+        filter: invert(var(--image-invert));
     }
 
     & span {

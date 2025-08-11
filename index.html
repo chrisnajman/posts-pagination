@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="A fully accessible, modular JavaScript pagination component with screen reader support, dynamic content loading, and URL syncing for seamless navigation.">
+        content="A fully accessible, modular JavaScript posts pagination component with screen reader support, dynamic content loading, and URL syncing for seamless navigation.">
     <title>Posts pagination</title>
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
@@ -28,12 +28,7 @@
 
     <header class="header">
         <p class="h1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512" aria-hidden="true">
-                <path d="M421.286,121.468V60.734h-118.47L242.083,0H20.279v390.532h70.435v60.734h70.437V512h330.571V121.468H421.286z
-			             M250.992,51.925l8.809,8.809l24.253,24.253l14.871,14.871h-47.932V51.925z M50.696,360.115V30.417h169.879v99.859h99.857v229.839
-			             H90.714H50.696z M121.131,420.849v-30.317h229.718V108.768l-17.617-17.617h57.635v30.317v299.381H161.151H121.131z
-			             M461.304,481.583H191.568v-30.317h229.719V151.885h40.018V481.583z" />
-            </svg>
+            <img src="./img/posts-icon.png" width="50" alt="">
             <span>Posts Pagination</span>
         </p>
 
@@ -42,7 +37,7 @@
     <main class="main container" id="main-content">
 
         <h1>Posts</h1>
-        <!-- posts pages and paginator to go here -->
+
         <div id="posts-page-container" class="posts-page-container"></div>
 
         <div id="live-region" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
@@ -51,7 +46,6 @@
             <div id="paginator" class="paginator"></div>
         </nav>
 
-        <!-- post template -->
         <template id="article-post">
             <article class="post flow" data-item>
                 <header class="post-header">
@@ -63,7 +57,7 @@
 			C178.8,390.2,160,409,136.8,409z M242,408.2c0-40-14.8-76-42.4-103.6c-28-28-63.6-42.4-103.6-42.4v-60.4
 			c112,0,206.4,94.4,206.4,206.4H242z M348.8,408.2c0-140-112.8-252.8-252.8-252.8V95c172,0,313.2,141.2,313.2,313.2H348.8z" />
                     </svg>
-                    <h2>Post <span data-id></span>: <span data-title></span></h2>
+                    <h2><span data-id></span>: <span data-title></span></h2>
                 </header>
                 <p data-body></p>
                 <ul class="info">

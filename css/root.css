@@ -17,6 +17,7 @@
     --shadow-bottom: 0 4px 6px rgba(0, 0, 0, 0.2);
     --like: -46px;
     --dislike: -69px;
+    --image-invert: 0;
 }
 
 .darkmode {
@@ -30,4 +31,5 @@
     --shadow-bottom: 0 4px 6px rgba(0, 0, 0, 0.7);
     --like: 0;
     --dislike: -23px;
+    --image-invert: 1;
 }
